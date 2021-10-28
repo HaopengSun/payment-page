@@ -23,8 +23,7 @@ var style = {
 };
 
 // Style button with BS
-document.querySelector('#payment-form button').classList =
-  'btn btn-primary btn-block mt-4';
+document.querySelector('#payment-form button').classList = 'btn btn-primary btn-block mt-4';
 
 // Create an instance of the card Element
 var card = elements.create('card', { style: style });
