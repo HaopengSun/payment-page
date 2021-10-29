@@ -16,16 +16,16 @@
       $this->db->bind(':last_name', $data['last_name']);
       $this->db->bind(':email', $data['email']);
 
-      // Execute
+      // Execute the query
       if($this->db->execute()) {
         return true;
       }
       return false;
     }
 
+    // get all customers
     public function getCustomers() {
       $this->db->query('SELECT * FROM customers ORDER BY created_at DESC');
-
       return $this->db->resultset();
     }
   }
