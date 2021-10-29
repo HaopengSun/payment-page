@@ -23,6 +23,7 @@
     <h2>Thank you for purchasing <?php echo $product; ?></h2>
     <hr>
     <p>Your transaction ID is <?php echo $tid; ?></p>
+    <p><a href="index.php" class="btn btn-light mt-2">Go Back</a></p>
   </container>
 </body>
 </html>
