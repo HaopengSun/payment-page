@@ -18,7 +18,6 @@
       $this->db->bind(':currency', $data['currency']);
       $this->db->bind(':status', $data['status']);
 
-      // Execute
       if($this->db->execute()) {
         return true;
       }
@@ -27,7 +26,6 @@
 
     public function getTransactions() {
       $this->db->query('SELECT * FROM transactions ORDER BY created_at DESC');
-
       return $this->db->resultset();
     }
   }
